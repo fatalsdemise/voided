@@ -1,0 +1,356 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MainUI = Instance.new("ScreenGui")
+local voided = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MainScripts = Instance.new("TextButton")
+local ToggleButton = Instance.new("TextButton")
+local TPS = Instance.new("TextButton")
+local Selling = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Holder = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local GodBlock = Instance.new("TextButton")
+local GodArmor = Instance.new("TextButton")
+local Headless = Instance.new("TextButton")
+local FreeFist = Instance.new("TextButton")
+local Reach = Instance.new("TextButton")
+local Fling = Instance.new("TextButton")
+local NoRecoil = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local View = Instance.new("TextButton")
+local NoClip = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local Nun = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+MainUI.Name = "MainUI"
+MainUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainUI.ResetOnSpawn = false
+
+voided.Name = "voided"
+voided.Parent = MainUI
+voided.Active = true
+voided.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+voided.Position = UDim2.new(0.315790117, 0, 0.235582829, 0)
+voided.Size = UDim2.new(0, 620, 0, 347)
+
+UICorner.Parent = voided
+
+MainScripts.Name = "MainScripts"
+MainScripts.Parent = voided
+MainScripts.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+MainScripts.BorderSizePixel = 0
+MainScripts.Position = UDim2.new(0.0357966162, 0, 0.190511823, 0)
+MainScripts.Size = UDim2.new(0, 141, 0, 39)
+MainScripts.Font = Enum.Font.SourceSansSemibold
+MainScripts.Text = "Main Scripts"
+MainScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainScripts.TextSize = 16.000
+MainScripts.TextWrapped = true
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = voided
+ToggleButton.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+ToggleButton.BorderSizePixel = 0
+ToggleButton.Position = UDim2.new(0.0357966162, 0, 0.346131414, 0)
+ToggleButton.Size = UDim2.new(0, 141, 0, 39)
+ToggleButton.Font = Enum.Font.SourceSansSemibold
+ToggleButton.Text = "Toggles"
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.TextSize = 16.000
+ToggleButton.TextWrapped = true
+
+TPS.Name = "TPS"
+TPS.Parent = voided
+TPS.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TPS.BorderSizePixel = 0
+TPS.Position = UDim2.new(0.0357966162, 0, 0.507514715, 0)
+TPS.Size = UDim2.new(0, 141, 0, 38)
+TPS.Font = Enum.Font.SourceSansSemibold
+TPS.Text = "Quick TP"
+TPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TPS.TextSize = 16.000
+TPS.TextWrapped = true
+
+Selling.Name = "Selling"
+Selling.Parent = voided
+Selling.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Selling.BorderSizePixel = 0
+Selling.Position = UDim2.new(0.0357966162, 0, 0.674661696, 0)
+Selling.Size = UDim2.new(0, 141, 0, 38)
+Selling.Font = Enum.Font.SourceSansSemibold
+Selling.Text = "Selling Tools"
+Selling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Selling.TextSize = 16.000
+Selling.TextWrapped = true
+
+TextLabel.Parent = voided
+TextLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0214425176, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 149, 0, 43)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Voided"
+TextLabel.TextColor3 = Color3.fromRGB(61, 61, 61)
+TextLabel.TextSize = 40.000
+
+TextLabel_2.Parent = voided
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0462519936, 0, 0.834645689, 0)
+TextLabel_2.Size = UDim2.new(0, 126, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Credits: fatal#0009 and michael.#66666"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Holder.Name = "Holder"
+Holder.Parent = voided
+Holder.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Holder.Position = UDim2.new(0.311004728, 0, 0.0367454514, 0)
+Holder.Size = UDim2.new(0, 417, 0, 319)
+
+UICorner_2.Parent = Holder
+
+GodBlock.Name = "GodBlock"
+GodBlock.Parent = Holder
+GodBlock.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GodBlock.BorderSizePixel = 0
+GodBlock.Position = UDim2.new(0.0298811737, 0, 0.0389846303, 0)
+GodBlock.Size = UDim2.new(0, 115, 0, 40)
+GodBlock.Font = Enum.Font.SourceSansSemibold
+GodBlock.Text = "God Block"
+GodBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodBlock.TextSize = 16.000
+GodBlock.TextWrapped = true
+
+GodArmor.Name = "GodArmor"
+GodArmor.Parent = Holder
+GodArmor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GodArmor.BorderSizePixel = 0
+GodArmor.Position = UDim2.new(0.0298811737, 0, 0.287229687, 0)
+GodArmor.Size = UDim2.new(0, 115, 0, 40)
+GodArmor.Font = Enum.Font.SourceSansSemibold
+GodArmor.Text = "God Armor"
+GodArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodArmor.TextSize = 16.000
+GodArmor.TextWrapped = true
+
+Headless.Name = "Headless"
+Headless.Parent = Holder
+Headless.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Headless.BorderSizePixel = 0
+Headless.Position = UDim2.new(0.0298811737, 0, 0.545638204, 0)
+Headless.Size = UDim2.new(0, 115, 0, 40)
+Headless.Font = Enum.Font.SourceSansSemibold
+Headless.Text = "Headless"
+Headless.TextColor3 = Color3.fromRGB(255, 255, 255)
+Headless.TextSize = 16.000
+Headless.TextWrapped = true
+
+FreeFist.Name = "FreeFist"
+FreeFist.Parent = Holder
+FreeFist.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FreeFist.BorderSizePixel = 0
+FreeFist.Position = UDim2.new(0.0298811737, 0, 0.811933279, 0)
+FreeFist.Size = UDim2.new(0, 115, 0, 40)
+FreeFist.Font = Enum.Font.SourceSansSemibold
+FreeFist.Text = "FreeFists (T)"
+FreeFist.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeFist.TextSize = 16.000
+FreeFist.TextWrapped = true
+
+Reach.Name = "Reach"
+Reach.Parent = Holder
+Reach.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Reach.BorderSizePixel = 0
+Reach.Position = UDim2.new(0.360816449, 0, 0.0389846303, 0)
+Reach.Size = UDim2.new(0, 115, 0, 40)
+Reach.Font = Enum.Font.SourceSansSemibold
+Reach.Text = "Reach"
+Reach.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reach.TextSize = 16.000
+Reach.TextWrapped = true
+
+Fling.Name = "Fling"
+Fling.Parent = Holder
+Fling.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0.360816449, 0, 0.545638204, 0)
+Fling.Size = UDim2.new(0, 115, 0, 40)
+Fling.Font = Enum.Font.SourceSansSemibold
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextSize = 16.000
+Fling.TextWrapped = true
+
+NoRecoil.Name = "NoRecoil"
+NoRecoil.Parent = Holder
+NoRecoil.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NoRecoil.BorderSizePixel = 0
+NoRecoil.Position = UDim2.new(0.360816449, 0, 0.287229687, 0)
+NoRecoil.Size = UDim2.new(0, 115, 0, 40)
+NoRecoil.Font = Enum.Font.SourceSansSemibold
+NoRecoil.Text = "No Recoil"
+NoRecoil.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoRecoil.TextSize = 16.000
+NoRecoil.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Holder
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.360816449, 0, 0.811933279, 0)
+Fly.Size = UDim2.new(0, 115, 0, 40)
+Fly.Font = Enum.Font.SourceSansSemibold
+Fly.Text = "Fly (X)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 16.000
+Fly.TextWrapped = true
+
+View.Name = "View"
+View.Parent = Holder
+View.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+View.BorderSizePixel = 0
+View.Position = UDim2.new(0.703742087, 0, 0.0389846303, 0)
+View.Size = UDim2.new(0, 115, 0, 40)
+View.Font = Enum.Font.SourceSansSemibold
+View.Text = "View"
+View.TextColor3 = Color3.fromRGB(255, 255, 255)
+View.TextSize = 16.000
+View.TextWrapped = true
+
+NoClip.Name = "NoClip"
+NoClip.Parent = Holder
+NoClip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.BorderSizePixel = 0
+NoClip.Position = UDim2.new(0.703742087, 0, 0.545638204, 0)
+NoClip.Size = UDim2.new(0, 115, 0, 40)
+NoClip.Font = Enum.Font.SourceSansSemibold
+NoClip.Text = "NoClip (Z)"
+NoClip.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoClip.TextSize = 16.000
+NoClip.TextWrapped = true
+
+Reset.Name = "Reset"
+Reset.Parent = Holder
+Reset.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Reset.BorderSizePixel = 0
+Reset.Position = UDim2.new(0.703742087, 0, 0.287229687, 0)
+Reset.Size = UDim2.new(0, 115, 0, 40)
+Reset.Font = Enum.Font.SourceSansSemibold
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reset.TextSize = 16.000
+Reset.TextWrapped = true
+
+Nun.Name = "Nun"
+Nun.Parent = Holder
+Nun.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Nun.BorderSizePixel = 0
+Nun.Position = UDim2.new(0.703742087, 0, 0.811933279, 0)
+Nun.Size = UDim2.new(0, 115, 0, 40)
+Nun.Font = Enum.Font.SourceSansSemibold
+Nun.Text = "Nothing"
+Nun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nun.TextSize = 16.000
+Nun.TextWrapped = true
+
+TextLabel_3.Parent = voided
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0357965827, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 141, 0, 48)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Voided"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 40.000
+
+TextLabel_4.Parent = voided
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.00797448121, 0, 0.0524934418, 0)
+TextLabel_4.Size = UDim2.new(0, 175, 0, 38)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "____________"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 33.000
+TextLabel_4.TextWrapped = true
+
+-- Scripts:
+
+local function JWOO_fake_script() -- voided.LocalScript 
+	local script = Instance.new('LocalScript', voided)
+
+	wait()
+	
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "NEW SERVER", Text = "discord.gg/voided (copied to clipboard)"})
+	
+	
+	wait(3)
+	
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Successfully Loaded", Text = ""})
+end
+coroutine.wrap(JWOO_fake_script)()
+local function JAKPO_fake_script() -- voided.LocalScript 
+	local script = Instance.new('LocalScript', voided)
+
+	player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(key)
+		if key == "v" and script.Parent.Visible == false then
+			script.Parent.Visible = true
+		else
+			if key == "v" and script.Parent.Visible == true then
+				script.Parent.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(JAKPO_fake_script)()
+local function URCKFF_fake_script() -- Reset.LocalScript 
+	local script = Instance.new('LocalScript', Reset)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(URCKFF_fake_script)()
+local function DZQSUDK_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	local text = 'voided'
+	
+	for i = 1, #text do
+		script.Parent.Text = string.sub(text,1,i)
+	end
+end
+coroutine.wrap(DZQSUDK_fake_script)()
+local function TKYPN_fake_script() -- voided.Script 
+	local script = Instance.new('Script', voided)
+
+	frame = script.Parent.Parent.voided -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(TKYPN_fake_script)()
+local function KPJR_fake_script() -- voided.LocalScript 
+	local script = Instance.new('LocalScript', voided)
+
+	script.parent.Draggable = true
+	script.parent.Active = true
+	script.parent.Selectable = true
+end
+coroutine.wrap(KPJR_fake_script)()
